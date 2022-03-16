@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content= "width=device-width, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta name="description" content="toonzs">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/eye.css" media="screen,projection">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+ <link rel='stylesheet' href='https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css'>
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Team Profile | Toonzstation</title>
+</head>
+
+<body>
+    <main id="main-doc1">
+        <section class="logo-sec">
+            <div class="container">
+                <div class="logo AH_logo op">
+                    <a href="index.html" rel="home" class="site-branding__logo db">
+                        <img src="images/logo-sm.png" alt="Home">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-sec">
+            <div class="container">
+                <div class="chart-sec">
+                    <div class="videoContainerWrap">
+                        <div class="videoContainer">
+                            <iframe src="https://player.vimeo.com/video/493869244?title=0&byline=0&portrait=0" id="tab1C" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/477923772?title=0&byline=0&portrait=0" id="tab2C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/493869244?title=0&byline=0&portrait=0" id="tab3C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/460512377?title=0&byline=0&portrait=0" id="tab4C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/460144029?title=0&byline=0&portrait=0" id="tab5C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/493869244?title=0&byline=0&portrait=0" id="tab6C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/464486329?title=0&byline=0&portrait=0" id="tab7C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/493869244?title=0&byline=0&portrait=0" id="tab8C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/460144029?title=0&byline=0&portrait=0" id="tab9C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                            <iframe src="https://player.vimeo.com/video/493869244?title=0&byline=0&portrait=0" id="tab10C" hidden frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="teamWrap service-outer op">
+                            <div class="about-content service-content">
+                                <div class="about-inner pos-re">
+                                    <div class="about-para teamProfileSec serviceProfileSec">
+                                        <ul id="tabs">
+                                            <li id="tab1" class="active">StoryBoard & Animatics</li>
+                                            <li id="tab2">Character Designing</li>
+                                            <li id="tab3">2D Animation</li>
+                                            <li id="tab4">3D Animation</li>
+                                            <li id="tab5">Concept Art</li>
+                                            <li id="tab6">SKU</li>
+                                            <li id="tab7">Asset Modelling</li>
+                                            <li id="tab8">FX & Simulation</li>
+                                            <li id="tab9">Motion Graphics</li>
+                                            <li id="tab10">Sto>e-Learning</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="menu" id="mainMenu">
+            <nav>
+                <ul class="menu-item ser-menu">
+                    <li class="slide" id="menu5"><a href="about.html">ABOUT US</a></li>
+                    <li class="slide" id="menu1"><a href="team.html">TEAM PROFILE</a></li>
+                    <li class="slide active" id="menu2"><a href="services.html">SERVICE</a></li>
+					<li class="slide" id="menu3"><a href="client.html">CLIENTS</a></li>
+                    <li class="slide" id="menu4"><a href="contact-us.html">CONNECT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    
+    <script>
+        $('#tabs li').click(function(){
+            var t = $(this).attr('id');
+            $('#tabs li').removeClass('active');
+            $(this).addClass("active");
+            
+            $('iframe').hide();
+            $('#'+ t + 'C').fadeIn('slow');
+        });
+    </script>
+
+    <script type="text/javascript" src="js/jqeye.min.js"></script>
+    <script src="js/eye.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

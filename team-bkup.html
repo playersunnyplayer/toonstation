@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <meta name="description" content="toonzs">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/png" />
+	 <title>Team | Toonzstation</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/png" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.css" media="screen,projection">
+    <link rel="stylesheet" type="text/css" href="css/eye.css" media="screen,projection">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+ <link rel='stylesheet' href='https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.min.css'>
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/responsive.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+
+
+   
+</head>
+
+<body>
+    <main>
+    <section class="logo-sec">
+            <div class="container">
+                <div class="logo ser-logo">
+                     <a href="index.html" rel="home" class="site-branding__logo db">
+                        <img src="images/logo-sm.png" alt="Home">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="team-sec">
+
+            <div class="container">
+			
+			
+			
+			
+			
+			 <div class="team-outer">
+                            <div class="team-content">
+                                <div class="team-inner about-inner">
+                                    
+									
+                                    <h2>Team Profile</h2>
+									<div class="about-para team-para">
+                                    <p>We’re proud to be a diverse, global team united by values including openness, positivity, and drive that stems from our founders.</p>
+									<p>As we all are part of visual industry and as a team we strive for only basic objective that <i><strong>“the show must go on”</strong></i></p>
+									<p>Good content, quality output, and timely deliverable are the key factors to keep the show on.</p>
+									<p>We as a team adhere to the above key factors, and have a great combination of talent who easily understand the content requirements, target audience, and give the best quality output with define scope of work and budget.</p>
+									<p>We value the contribution made by team and every individual is a leader for us!</p>
+                                
+                                </div>
+                            </div>
+
+                        </div>
+			
+	
+			
+                       
+                   
+			
+            </div>
+			 <img class="team-eye team-eye1" id="team-eye1" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye2" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye3" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye4" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye5" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye6" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye7" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye8" src="images/Eye.svg" alt="Home">
+			  <img class="team-eye" id="team-eye9" src="images/Eye.svg" alt="Home">
+			
+		
+        </section>
+		
+
+        <div class="menu" id="mainMenu">
+            <nav>
+                <ul class="menu-item  ser-menu">
+                    <li class="slide" id="menu5"><a href="about.html">ABOUT US</a></li>
+                    <li class="slide   active" id="menu1"><a href="team.html">TEAM PROFILE</a></li>
+                    <li class="slide" id="menu2"><a href="services.html">SERVICE</a></li>
+					<li class="slide" id="menu3"><a href="client.html">CLIENTS</a></li>
+                    <li class="slide" id="menu4"><a href="contact-us.html">CONNECT US</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+
+    </main>
+
+    <script type="text/javascript" passive
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+		
+		<script>
+    /*
+        Make cards clickable
+        ====================
+    */
+
+    $('.thumb-outer').on('click', function() {
+        $(this).parent().find("a").trigger('click');
+    });
+
+    /*
+
+        Set caption from card text
+        ==========================
+    */
+
+    $('.thumb-outer a').fancybox({
+        caption : function( instance, item ) {
+            return $(this).parent().find('.card-text').html();
+        }
+    });
+</script>
+ 
+    <script type="text/javascript" src="js/jqeye.min.js"></script>
+    <script src="js/eye.js"></script>
+    <script src="js/script.js"></script>
+	<script src='https://malihu.github.io/custom-scrollbar/jquery.mCustomScrollbar.concat.min.js'></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+
+</html>
