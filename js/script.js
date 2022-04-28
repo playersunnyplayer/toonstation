@@ -30,3 +30,8 @@ $(document).ready(function () {
 $('.mobileMenu a').click(() => {
   $('.mobileMenu #active').prop('checked', false)
 })
+
+// $('.teamThumb').click(function () {
+//   var modelID = $(this).attr('id');
+//   let modelName = $(`#${modelID} .memberName`).text();
+// })
